@@ -1,5 +1,7 @@
 using System;
 using PaymentContext.Domain.Entities;
+using PaymentContext.Domain.ValueObject;
+using PaymentContext.Domain.Enums;
 using Xunit;
 
 namespace PaymentContext.Test
@@ -10,7 +12,9 @@ namespace PaymentContext.Test
         public void Test1()
         {
             Subscription subscription = new Subscription(null);
-            Student student = new Student("Jose", "Silva", "123.456.789-96", "jose_silva@gmail.com");
+            var name = new Name("Jose", "Silva");
+            var document = new Document("123.456.789-96", EDocumentType.CPF);
+            Student student = new Student(name, document, "jose_silva@gmail.com");
 
             student.AddSubscription(subscription);
         }

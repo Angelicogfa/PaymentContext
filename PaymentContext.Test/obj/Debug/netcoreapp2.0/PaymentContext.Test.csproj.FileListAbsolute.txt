@@ -1,3 +1,6 @@
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.csproj.CoreCompileInputs.cache
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfoInputs.cache
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfo.cs
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
@@ -6,12 +9,9 @@ C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Test.runtimeconfig.dev.json
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Test.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Test.pdb
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.csproj.CoreCompileInputs.cache
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfoInputs.cache
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfo.cs
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.dll
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.pdb
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Domain.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Shared.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Shared.pdb
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Domain.pdb
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.dll
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.pdb
