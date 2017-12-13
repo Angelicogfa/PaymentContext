@@ -5682,6 +5682,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\WorkSpace-Angelicogfa\\PaymentContext\\PaymentContext.Test\\PaymentContext.Test.csproj",
       "projectName": "PaymentContext.Test",
@@ -5724,27 +5727,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "xunit.runner.visualstudio": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "2.2.0"
           },
           "flunt": {
             "target": "Package",
             "version": "1.0.2"
           },
-          "Microsoft.NET.Test.Sdk": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "15.3.0-preview-20170628-02"
+            "version": "2.0.0",
+            "autoReferenced": true
           },
           "xunit": {
             "target": "Package",
             "version": "2.2.0"
           },
-          "xunit.runner.visualstudio": {
+          "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "15.3.0-preview-20170628-02"
           }
         },
         "imports": [

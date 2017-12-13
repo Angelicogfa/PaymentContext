@@ -29,7 +29,8 @@ namespace PaymentContext.Domain.Entities
         {
             AddNotifications((new Contract()
             .Requires()
-            .IsGreaterOrEqualsThan(DateTime.Now.Date, payment.PaidDate.Date, "Subscription.Payments", "A data do pagamento não pode ser inferior a data atual!")));
+            .IsGreaterOrEqualsThan(DateTime.Now.Date, payment.PaidDate.Date, "Subscription.Payments", "A data do pagamento não pode ser inferior a data atual!")
+            .IsTrue(payment.Valid, "Subscription.Payments", "Pagamento está inválido!")));
 
             if(Valid)
                 _payments.Add(payment);
