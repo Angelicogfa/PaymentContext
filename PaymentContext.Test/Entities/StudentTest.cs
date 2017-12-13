@@ -14,7 +14,7 @@ namespace PaymentContext.Test
             Subscription subscription = new Subscription(null);
             var name = new Name("Jose", "Silva");
             var document = new Document("123.456.789-96", EDocumentType.CPF);
-            Student student = new Student(name, document, "jose_silva@gmail.com");
+            Student student = new Student(name, document, new Email("jose_silva@gmail.com"));
 
             student.AddSubscription(subscription);
         }
