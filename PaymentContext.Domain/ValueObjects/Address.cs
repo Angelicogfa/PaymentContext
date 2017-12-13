@@ -1,3 +1,4 @@
+using Flunt.Validations;
 using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
@@ -13,6 +14,15 @@ namespace PaymentContext.Domain.ValueObjects
             State = state;
             Contry = contry;
             ZipCode = zipCode;
+
+            AddNotifications(new Contract()
+            .Requires()
+            .HasMinLen(Street, 3, "Address.Street", "A rua deve conter pelo menos 3 caractéres!")
+            .HasMinLen(City, 3, "Address.City", "A cidade deve conter pelo menos 3 caractéres!")
+            .HasMinLen(State, 2, "Address.State", "O estado deve conter pelo menos 3 caractéres!")
+            .HasMinLen(Contry, 3, "Address.Contry", "O país deve conter pelo menos 3 caractéres!")
+            .IsNotNullOrEmpty(ZipCode,"Address.ZipCode", "O CEP deve ser informado!")
+            .IsNotNullOrEmpty(Number,"Address.Number", "O número deve ser informado!"));
         }
 
         public string Street { get; private set; }

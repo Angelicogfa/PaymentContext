@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Flunt.Validations;
 using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
@@ -8,11 +9,7 @@ namespace PaymentContext.Domain.ValueObjects
         public Email(string address)
         {
             Address = address;
-
-            if(string.IsNullOrEmpty(address))
-                AddNotification(nameof(Address), "Email não informado!");
-            else if(!Regex.IsMatch(address, @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"))
-                AddNotification(nameof(Address), "Email não é válido!");
+            AddNotifications(new Contract().Requires().IsEmail(Address, "Email.Address", "E-mail inválido"));
         }
 
         public string Address { get; private set; }
