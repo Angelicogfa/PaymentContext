@@ -1,4 +1,4 @@
-namespace PaymentContext.Domain.ValueObject
+namespace PaymentContext.Domain.ValueObjects
 {
     public sealed class Name
     {

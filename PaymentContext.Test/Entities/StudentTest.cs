@@ -1,6 +1,6 @@
 using System;
 using PaymentContext.Domain.Entities;
-using PaymentContext.Domain.ValueObject;
+using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Domain.Enums;
 using Xunit;
 
