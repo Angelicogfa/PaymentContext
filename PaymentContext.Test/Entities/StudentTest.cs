@@ -12,6 +12,18 @@ namespace PaymentContext.Test.Entities
         public void AdicionarAssinaturaValida()
         {
             Subscription subscription = new Subscription(null);
+
+            Address endereco = new Address("RUA DOS CARVALHOS", "S/N", "", "METROCITY", "CA", "USA", "123");
+
+            subscription.AddPayment(new PayPalPayment(Guid.NewGuid().ToString("n"),
+            DateTime.Now, 
+            DateTime.Now, 
+            10, 
+            10, 
+            "Maria",
+            new Document("12.852.369/8521-08", EDocumentType.CNPJ), endereco, 
+            new Email("maria@gmail.com")));
+
             Student student = new Student(new Name("Jose", "Silva"), new Document("123.456.789-96", EDocumentType.CPF), new Email("jose_silva@gmail.com"));
 
             student.AddSubscription(subscription);
@@ -26,11 +38,33 @@ namespace PaymentContext.Test.Entities
         {
             Student student = new Student(new Name("Jose", "Silva"), new Document("123.456.789-96", EDocumentType.CPF), new Email("jose_silva@gmail.com"));
 
-            student.AddSubscription(new Subscription(null));
+            Address endereco = new Address("RUA DOS CARVALHOS", "S/N", "", "METROCITY", "CA", "USA", "123");
+            
+            Subscription subscription01 = new Subscription(null);
+            subscription01.AddPayment(new PayPalPayment(Guid.NewGuid().ToString("n"),
+            DateTime.Now, 
+            DateTime.Now, 
+            10, 
+            10, 
+            "Maria",
+            new Document("12.852.369/8521-08", EDocumentType.CNPJ), endereco, 
+            new Email("maria@gmail.com")));
+
+            Subscription subscription02 = new Subscription(null);
+            subscription02.AddPayment(new PayPalPayment(Guid.NewGuid().ToString("n"),
+            DateTime.Now, 
+            DateTime.Now, 
+            10, 
+            10, 
+            "Maria",
+            new Document("12.852.369/8521-08", EDocumentType.CNPJ), endereco, 
+            new Email("maria@gmail.com")));
+
+            student.AddSubscription(subscription01);
             Assert.True(student.Valid);
             Assert.True(student.Subscriptions.Count == 1);
 
-            student.AddSubscription(new Subscription(null));
+            student.AddSubscription(subscription02);
             Assert.True(student.Invalid);
             Assert.True(student.Subscriptions.Count == 1);
         }

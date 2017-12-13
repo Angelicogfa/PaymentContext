@@ -1,3 +1,4 @@
+using System.Linq;
 using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.ValueObjects;
 using Xunit;
@@ -13,7 +14,7 @@ namespace PaymentContext.Test.ValueObjects
         {
             Document document = new Document(documento, type);
 
-            Assert.True(document.Valid);
+            Assert.True(document.Valid, document.Notifications.FirstOrDefault()?.Message);
         }
 
         [Theory]

@@ -15,3 +15,4 @@ C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfo.cs
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.pdb
+C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.csprojResolveAssemblyReference.cache
