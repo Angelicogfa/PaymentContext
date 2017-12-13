@@ -16,6 +16,7 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;
 
+            AddNotifications(name, document, email);
             _subscriptions = new List<Subscription>();
         }
 
@@ -28,9 +29,9 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscription(Subscription subscription)
         {
-            foreach (var sub in Subscriptions)
-                sub.Inactivate();
-
+            if(Subscriptions.Any(t=> t.Active))
+                Subscriptions.ToList().ForEach(t=> t.Inactivate());
+            
             _subscriptions.Add(subscription);
         }
     }

@@ -4,19 +4,21 @@ using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Domain.Enums;
 using Xunit;
 
-namespace PaymentContext.Test
+namespace PaymentContext.Test.Entities
 {
     public class StudentTest
     {
         [Fact]
-        public void Test1()
+        public void AdicionarAssinatura()
         {
             Subscription subscription = new Subscription(null);
-            var name = new Name("Jose", "Silva");
-            var document = new Document("123.456.789-96", EDocumentType.CPF);
-            Student student = new Student(name, document, new Email("jose_silva@gmail.com"));
+            Student student = new Student(new Name("Jose", "Silva"), new Document("123.456.789-96", EDocumentType.CPF), new Email("jose_silva@gmail.com"));
 
             student.AddSubscription(subscription);
+
+            Assert.True(student.Valid);
+            Assert.True(subscription.Valid);
+            Assert.Contains(subscription, student.Subscriptions);
         }
     }
 }

@@ -10,7 +10,6 @@ C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Shared.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Shared.pdb
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\bin\Debug\netcoreapp2.0\PaymentContext.Domain.pdb
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.csprojResolveAssemblyReference.cache
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.csproj.CoreCompileInputs.cache
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfoInputs.cache
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Test\obj\Debug\netcoreapp2.0\PaymentContext.Test.AssemblyInfo.cs
