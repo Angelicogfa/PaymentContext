@@ -8,4 +8,3 @@ C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Domain\obj\Debug\netstand
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.AssemblyInfo.cs
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.pdb
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Domain\obj\Debug\netstandard2.0\PaymentContext.Domain.csprojResolveAssemblyReference.cache
