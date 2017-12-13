@@ -13,12 +13,9 @@ namespace PaymentContext.Test.ValueObjects
         }
 
         [Theory]
-        [InlineData("Jose", null)]
         [InlineData("Jose", "")]
         [InlineData("", "")]
         [InlineData("", "Silva")]
-        [InlineData(null, "Silva")]
-        [InlineData(null, null)]
         public void NomeInvalido(string firstName, string lastName)
         {
             Name name = new Name(firstName, lastName);

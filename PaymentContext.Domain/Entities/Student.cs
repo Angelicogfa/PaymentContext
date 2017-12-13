@@ -32,7 +32,7 @@ namespace PaymentContext.Domain.Entities
         {
             AddNotifications(new Contract().
             Requires().
-            IsTrue(Subscriptions.Any(t=> t.Active), "Student.Subscriptions", "Você já possui uma assinatura ativa"));
+            IsFalse(Subscriptions.Any(t=> t.Active), "Student.Subscriptions", "Você já possui uma assinatura ativa"));
                 
             if(Valid)
                 _subscriptions.Add(subscription);

@@ -15,7 +15,6 @@ namespace PaymentContext.Test.ValueObjects
 
         [Theory]
         [InlineData("")]
-        [InlineData(null)]
         [InlineData("jose@.com")]
         [InlineData("@google.com")]
         [InlineData("@.com")]

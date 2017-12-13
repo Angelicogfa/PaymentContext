@@ -18,10 +18,8 @@ namespace PaymentContext.Test.ValueObjects
 
         [Theory]
         [InlineData("", EDocumentType.CNPJ)]
-        [InlineData(null, EDocumentType.CNPJ)]
         [InlineData("123.456.258/12-158", EDocumentType.CNPJ)]
         [InlineData("", EDocumentType.CPF)]
-        [InlineData(null, EDocumentType.CPF)]
         [InlineData("23.56.78986", EDocumentType.CPF)]
         public void DocumentoInvalido(string documento, EDocumentType type)
         {
