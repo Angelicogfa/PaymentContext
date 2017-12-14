@@ -44,14 +44,14 @@ namespace PaymentContext.Test.Entities
         {
             _student.AddSubscription(_subscription);
             Assert.True(_student.Invalid);
-            Assert.True(_subscription.Invalid);
+            Assert.True(_subscription.Valid);
             Assert.True(_student.Subscriptions.Count == 0);
         }
 
         [Fact]
         public void AdicionarAssinaturaInvalida_PagamentoInvalidoValorPago()
         {
-            var payment = new PayPalPayment(Guid.NewGuid().ToString("n"), DateTime.Now, DateTime.Now.AddDays(3), 10, 10, "Curringa", _document, _address, _email);
+            var payment = new PayPalPayment(Guid.NewGuid().ToString("n"), DateTime.Now, DateTime.Now.AddDays(3), 10, 9, "Curringa", _document, _address, _email);
             _subscription.AddPayment(payment);
             _student.AddSubscription(_subscription);
 

@@ -6,4 +6,3 @@ C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Shared\obj\Debug\netstand
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.AssemblyInfo.cs
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.dll
 C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.pdb
-C:\WorkSpace-Angelicogfa\PaymentContext\PaymentContext.Shared\obj\Debug\netstandard2.0\PaymentContext.Shared.csprojResolveAssemblyReference.cache

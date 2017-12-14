@@ -34,8 +34,7 @@ namespace PaymentContext.Domain.Entities
             Requires()
             .IsFalse(Subscriptions.Any(t => t.Active), "Student.Subscriptions", "Você já possui uma assinatura ativa")
             //.IsTrue(subscription.Valid, "Student.Subscription", "Assinatura está inválida")
-            .AreEquals(0, subscription.Payments.Count, "Student.Subscriptions.Payments", "Essa assinatura não possui pagamentos"));
-
+            .IsGreaterThan(subscription.Payments.Count, 0, "Student.Subscriptions.Payments", "Essa assinatura não possui pagamentos"));
 
             if (Valid)
                 _subscriptions.Add(subscription);
