@@ -11,10 +11,9 @@ namespace PaymentContext.Domain.ValueObjects
             LastName = lastName;
 
             AddNotifications(new Contract().Requires()
-            .IsNotNullOrEmpty(FirstName, "Name.FirstName", "Nome não informado!")
             .HasMinLen(FirstName, 3, "Name.FistName", "O nome deve ter no mínimo 3 caractéres!")
-            .IsNotNullOrEmpty(LastName, "Name.LastName", "Sobrenome não informado!")
-            .HasMinLen(LastName, 2, "Name.LastName", "O sobrenome deve ter no mínimo 2 caractéres!"));
+            .HasMinLen(LastName, 2, "Name.LastName", "O sobrenome deve ter no mínimo 2 caractéres!")
+            .HasMaxLen(FirstName, 40, "Name.FirstName", "Nome deve conter 40 caractéres"));
         }
 
         public string FirstName { get; private set; }
