@@ -1,9 +1,11 @@
 using System;
+using Flunt.Notifications;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shared.Commands;
 
 namespace PaymentContext.Domain.Commands
 {
-    public class CreateCreditCardSubscriptionCommand
+    public class CreateCreditCardSubscriptionCommand : Notifiable, ICommand
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -29,5 +31,10 @@ namespace PaymentContext.Domain.Commands
         public string State { get; private set; }
         public string Contry { get; private set; }
         public string ZipCode { get; private set; }
+
+        public void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

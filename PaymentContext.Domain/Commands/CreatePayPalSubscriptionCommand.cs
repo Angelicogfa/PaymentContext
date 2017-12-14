@@ -1,15 +1,21 @@
 using System;
+using Flunt.Notifications;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shared.Commands;
 
 namespace PaymentContext.Domain.Commands
 {
-    public class CreatePayPalSubscriptionCommand
+    public class CreatePayPalSubscriptionCommand : Notifiable, ICommand
     {
+        public CreatePayPalSubscriptionCommand()
+        {
+        }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }
         public string Email { get; set; }
-        
+
         public string TransactionCode { get; set; }
         public string PaymentNumber { get; set; }
         public DateTime PaidDate { get; set; }
@@ -27,5 +33,10 @@ namespace PaymentContext.Domain.Commands
         public string State { get; private set; }
         public string Contry { get; private set; }
         public string ZipCode { get; private set; }
+
+        public void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
