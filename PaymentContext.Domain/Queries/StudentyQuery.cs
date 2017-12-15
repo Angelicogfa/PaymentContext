@@ -1,0 +1,14 @@
+using System;
+using System.Linq.Expressions;
+using PaymentContext.Domain.Entities;
+
+namespace PaymentContext.Domain.Queries
+{
+    public static class StudentyQuery
+    {
+        public static Expression<Func<Student, bool>> GetStudentyByDocument(string document)
+        {
+            return x => x.Document.Number == document;
+        }
+    }
+}
